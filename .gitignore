@@ -1,8 +1,4 @@
-.project
-.pydevproject
-.settings
 dist
 MANIFEST
+comandos_git.sh
 *.pyc
-.DS_Store
-client-local.properties
