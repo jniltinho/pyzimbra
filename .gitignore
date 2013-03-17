@@ -1,4 +1,5 @@
 dist
 MANIFEST
+.directory
 comandos_git.sh
 *.pyc
