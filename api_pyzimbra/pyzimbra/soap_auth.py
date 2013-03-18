@@ -69,7 +69,7 @@ class SoapAuthenticator(Authenticator):
             raise AuthException(unicode(exc), exc)
 
         auth_token.token = res.authToken
-        auth_token.session_id = res.sessionId
+        auth_token.session_id = res.lifetime
 
         self.log.info('Authenticated admin %s, session id %s'
                       % (account_name, auth_token.session_id))
@@ -112,9 +112,9 @@ class SoapAuthenticator(Authenticator):
             raise AuthException(unicode(exc), exc)
 
         auth_token.token = res.authToken
-        
+
         if hasattr(res, 'sessionId'):
-            auth_token.session_id = res.sessionId
+            auth_token.session_id = res.lifetime
 
         self.log.info('Authenticated account %s, session id %s'
                       % (account_name, auth_token.session_id))
@@ -172,7 +172,7 @@ class SoapAuthenticator(Authenticator):
             raise AuthException(unicode(exc), exc)
 
         auth_token.token = res.authToken
-        auth_token.session_id = res.sessionId
+        auth_token.session_id = res.lifetime
 
         self.log.info('Authenticated account %s, session id %s'
                       % (account_name, auth_token.session_id))

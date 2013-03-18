@@ -13,3 +13,9 @@ Links API Zimbra
 **http://www.zemris.fer.hr/~sgros/devel/zimbra.shtml**
 
 **http://www.btactic.org/?page_id=268**
+
+
+Changes
+===
+
+Changes pyzimbra api
